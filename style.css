@@ -282,7 +282,7 @@ div#sidebar div#sidebar-me h4 {
 
 #sidebar ul li p {
 	margin-bottom: 1.5em;
-	line-height: 1.4em;
+	line-height: 18px;
 	}
 
 #sidebar a:hover {border-bottom: none;}
@@ -297,8 +297,10 @@ div#sidebar h3.widgettitle {
 	
 div#sidebar .item-avatar img{margin-bottom:10px;}
 #sidebar ul ul {margin-bottom: 0px;}
+
+
 #sidebar ul li {
-	clear: both;
+	
 	padding: 4px 0 24px;
 	font-size: 12px;
 	list-style: url(i/bullet.gif);
@@ -322,8 +324,8 @@ div#sidebar .item-avatar img{margin-bottom:10px;}
 #sidebar ul li#authors .avatar {vertical-align: middle;}
 
 /*** Sidebar ends here***/
-
-#groups-directory-form,#members-directory-form,#blogs-directory-form,#item-nav,#item-body{width:700px;}
+#events-dir-search{margin-right:25px;}
+#groups-directory-form,#members-directory-form,#blogs-directory-form,#item-nav,#item-body,#forums-search-form,#blog-details,#signup_form,#galleries-directory-form{width:700px;}
 div.dir-search {
     float: right;
     margin: -22px 0 0;
@@ -497,7 +499,7 @@ form.textedit textarea {
 #top-nav ul#nav {
 	list-style: none outside none;
     margin-top:10px;
-    max-width: 65%;
+    
     padding: 0;
     }
 #top-nav ul#nav li {
@@ -526,8 +528,7 @@ form.textedit textarea {
 
 /***navigation ends***/
 .meta .actions,.meta .actions a{color:#ccc;}
-.meta .actions{float:right;}
-.meta{margin-top:10px;clear:right;height:27px;}
+
 .entry .tags{color:#ccc;display:block;padding-top:5px;}
 .bread-crumbs{float:left;}
 div.post {
@@ -674,7 +675,8 @@ div#subnav.item-list-tabs {
 	overflow: hidden;
 	 border-bottom: 1px solid #F0F0F0;
 	 margin-bottom:5px;
-	 margin-top:0px;	 
+	 margin-top:0px;	
+padding-bottom:20px;	 
 	}
 div#subnav.item-list-tabs ul li {margin-top: 0;}
 div.item-list-tabs ul li:first-child {margin-left: 20px;}
@@ -887,7 +889,7 @@ div#item-header span.activity, div#item-header h2 span.highlight {
     font-weight: normal;
     line-height: 170%;
     margin-bottom: 7px;
-    vertical-align: middle;
+   vertical-align: middle;
 }
 
 span.activity, div#message p {
@@ -1364,7 +1366,7 @@ ul.commentlist li {
 	padding: 10px 0px;
 	list-style: none;
 }
-.commentlist h4 a{font-size:14px;margin-right:5px;}
+.commentlist h4 a{font-size:14px;}
 .commentlist h4 .actions a{font-size:12px;}
 .commentlist .commentcontent{margin-top:5px;color:#555555;}
 .commentlist h4 span{color:#888888;font-size:12px;}
@@ -1450,9 +1452,389 @@ em, cite {
     width: 100%;
 }
 #post-list .meta .actions{float:right;}
+body.gallery #item-body #subnav strong{ display: block;
+    margin-top: 4px;
+    text-align: right;}
+body.gallery #galleries p{margin-bottom:10px;}
+body.gallery #gallery_create_form #gallery_status,body.gallery #gallery_create_form #gallery_type {padding:0px;}
+body.gallery #from-my-comuter object{height:32px;width:125px;background:#ccc;color:#666;}
+body.events #message,body.events #item-meta p{margin-bottom:10px;}
+
+
 
 
 /*** css for single page***/
 
 body.single-post div.post{border-top:0px;}
 body.single-post .bread-crumbs,body.single-post div.entry{clear:left;}
+div.bp-gallery, div.bp-media{height:auto;}
+#sitewide-zoomable-images a img{margin-top:10px;}
+.gallery .swa-activity-content .swa-activity-inner a img{margin-top:10px;}
+.widget_bp_gallery_sitewide_gallery_widget div.bp-gallery, div.bp-media{padding:10px 0px;width:205px;}
+#members-list div.mark-spammer a,#members-list div.mark-spammer{margin-top:10px;display:block;}
+/***Css for branded login form starts here ****/
+#login-wrap .widget{
+	background:#FCFCFC;
+	padding:10px 20px;
+	margin:50px 0px 50px 210px;
+	width:300px;
+	border:1px solid #D1D1D1;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	}
+#login-wrap #user_login,#login-wrap #user_pass{
+	border:1px solid #605F5C;
+	background:#fff;
+	margin-top:5px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+    -khtml-border-radius:3px;
+    border-radius:3px;
+	padding:6px;
+	margin-bottom:10px;
+	width:175px;
+	color:#3C3934;
+	font-size:12px;
+	font-family:arial;
+	-moz-box-shadow: inset 0 0 1px #D8D7D6;
+	-webkit-box-shadow: inset 0 0 1px #D8D7D6;
+	box-shadow: inner 0 0 1px #D8D7D6;
+	}
+
+#login-wrap #nav a{color:#29100A;margin-top:10px;display:block;text-decoration:underline;}
+
+#login-wrap h3.widgettitle{
+	background: url("images/content_container_div_line_x.gif") repeat-x scroll left bottom transparent;
+	padding:0px 0px 8px 0px;
+	margin:9px 15px 10px 0px;
+	color:#555;
+	font-family: arial;
+    font-size: 18px;
+	font-weight:bold;
+	}
+#login-wrap #wp-submit{margin-top:10px;}
+
+/***Css for branded login form ends here ****/
+
+/***Css for Site wide activity widget starts here ****/
+.widget .swa-wrap ul#activity-filter-links li{
+	padding:10px 10px 10px 0px;
+	margin-left:20px;
+}
+
+#sidebar ul.site-wide-stream li{margin:10px 0px 0px 0px;border-bottom:2px dashed #ccc;}
+.swa-wrap .swa-activity-list div.swa-activity-meta a.acomment-reply {
+    background: none repeat scroll 0 0 #F4F4F4;
+    border-bottom: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    color: #545454;
+    font-size: 11px;
+    margin-right: 3px;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+#sidebar .swa-activity-meta a{border-bottom:1px solid #ddd;}
+.swa-wrap .swa-activity-list div.swa-activity-meta a.fav{color:#545454;}
+#sidebar ul.site-wide-stream .groups{padding-bottom:15px;}
+/**** Css fixes Site wide activity widget ends here***/
+
+/**** Css fixes for global forum starts here***/
+#content #search-forums-form {margin:-19px 23px 0 0;}
+div.forum-header-links,#forums-content .post-form{width:700px;}
+#forums-content .post-form{margin:10px 0px;}
+#forums-content .standard-form {width:675px;}
+#post-form-forum-container select {width:30%;padding:0px;}
+.padder div.forum-header-links ul li a, div.forum-header-links ul li span{color:#666;}
+/**** Css fixes for global forum ends here***/
+
+/**** Css fixes for global WYSIWYG starts here***/
+div.wysiwyg{height:120px;}
+/**** Css fixes for global WYSIWYG ends here***/
+
+/**** Css fixes for blog creation select theme starts here***/
+body.create-blog .padder p,body.create-blog .padder #setupform{width:700px;}
+body.create-blog .padder h3 {margin-bottom:10px;}
+.theme-lists h2{margin-bottom:10px;}
+ul#allowed-themes{padding-bottom:40px;}
+
+
+/**** Css fixes for blog creation select theme ends here***/
+
+
+
+#main button {
+	margin: 10px 10px 0 0;
+}
+
+#main ul#postlist {
+	list-style: none;
+	margin-top: 16px;
+	margin-left: 0;
+}
+#main {position: relative;}
+.single #main {
+	padding-top: 18px;
+}
+#main .wp-smiley {
+	border: none;
+}
+#main h2 {
+	
+	
+	line-height: 1.1em;
+}
+
+.author-box img{float:left;padding-right:10px;}
+#main .controls {
+	right: 0;
+	position: absolute;
+}
+.single #main .controls {
+position: static;
+}
+#main .transparent-title {
+	text-indent: -1000em;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+}
+
+
+#main img.avatar {
+	float: left;
+	margin-right: 10px;
+	border: solid;
+	border-width: 1px;
+	margin-top: 0;
+}
+#main ul#postlist li {
+	overflow: visible;
+	border-top: 1px solid #BBBBBB;
+	padding-top:10px;
+}
+#main .meta{position:relative;}
+#main ul#postlist ul.commentlist li {
+	border-top-style: solid;
+	border-top-width: 1px;
+	display: block;
+}
+#main h4 {
+	position: relative;
+}
+#main h4 .meta .actions{float:right;top:0px; right:0px;display:inline;position:relative;}
+#main .actions {
+	position: absolute;
+	right: 2px;
+	top: 0px;
+	display:block;
+}
+
+#main p img {
+	vertical-align: top;
+	padding: 2px;
+	border-style: solid;
+	border-width: 1px;
+	display: block;
+}
+.attachment #main .entry .attachment-image {
+	margin: .7em 0;
+	text-align: center;
+}
+#main .attachment-image img {
+	display: block;
+	margin: 0 auto;
+}
+
+#main ul, #main ol {
+	margin-left: 18px;
+}
+#main ul.commentlist {
+	border-top: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-left: 60px;
+}
+#main ul.commentlist li {
+	list-style: none;
+}
+#main ul.commentlist .commentcontent ul li,
+#main ul.commentlist .commentcontent ol ul li {
+	list-style: disc;
+}
+#main ul.commentlist .commentcontent ol li {
+	list-style: decimal;
+}
+#main ul.commentlist img.avatar {
+	margin-right: 12px;
+}
+#main ul#postlist .postcontent ul, #main ul#postlist .postcontent ol,
+#main ul#postlist .commentlist .commentcontent ul, #main ul#postlist .commentlist .commentcontent ol {
+	border: none;
+	border-width: 0;
+	border-style: none;
+	border-top-style: none;
+	border-top-width: 0;
+	overflow: visible;
+	padding-top: 0;
+}
+.postcontent ul, .postcontent ol, .commentcontent ul, .commentcontent ol {
+	margin: 10px 0 22px 20px !important;
+}
+.postcontent ul ul, .postcontent ul ol, .postcontent ol ol, .postcontent ol ul, .commentcontent ul ul, .commentcontent ul ol, .commentcontent ol ol, .commentcontent ol ul {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+.page-nav {
+	clear: both;
+}
+#main ul#postlist .postcontent li, #main ul#postlist .commentlist .commentcontent li {
+	border: none;
+	border-width: 0;
+	border-style: none;
+	border-top-style: none;
+	border-top-width: 0;
+}
+#main ul#postlist .postcontent ul li,
+#main ul#postlist .commentlist .commentcontent ul li,
+#main ul#postlist .postcontent ol li,
+#main ul#postlist .commentlist .commentcontent ol li {
+	display: list-item;
+	padding: 2px 0 0;
+}
+#main form {
+	margin-top: 10px;
+}
+#main input {
+	margin: 4px 0;
+}
+#respond {
+	overflow: hidden;
+	position: relative;
+}
+#postpage #respond {
+	width: 70%;
+	margin-bottom: 20px;
+	margin-left: 72px;
+}
+#main #respond, .textedit {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	margin-left: 60px;
+	padding: 14px 16px 12px;
+}
+.textedit {
+	margin-left: 0;
+}
+#main .commentlist #respond.replying {
+	margin-left: 44px;
+}
+#main .commentlist li #respond.replying {
+	margin-left: 93px;
+}
+#respond textarea, .textedit textarea {
+	width: 94%;
+	padding: 6px;
+	border-width: 1px;
+	border-style: solid;
+}
+#postpage #respond p {
+	margin-right: 0;
+}
+#respond p, li ul #respond p {
+	float: right;
+	margin-right: 10%;
+	padding-right: 5px;
+	margin-top: 5px;
+}
+#respond p.form-submit, li ul #respond p.form-submit {
+	float: none;
+	display: inline;
+	margin-right: 0;
+}
+#respond p label {
+	color: #888;
+	font-size: 12px;
+}
+#respond p.comment-form-author, #respond p.comment-form-email, #respond p.comment-form-url {
+	float: left;
+	width: 30%;
+	margin-right: 1.11%;
+}
+#respond p.comment-form-author input, #respond p.comment-form-email input, #respond p.comment-form-url input {
+	width: 90%;
+}
+#postpage li ul #respond p {
+	margin-right: 5%;
+}
+#postpage #respond textarea {
+	width: 96%;
+}
+#postpage li ul #respond textarea {
+	width: 94% !important;
+}
+.commentcontent {
+	overflow: auto;
+}
+.commentlist {
+	margin-bottom: 5px;
+}
+.commentlist .children {
+	margin: 0 !important;
+}
+.commentlist .children li {
+	list-style: none;
+	padding: 0 0 5px;
+	position: relative;
+	height: 1%;
+	margin-left: 47px;
+}
+.commentlist .children li li {
+	height: 1%;
+}
+.error404 #main #searchform div,
+.search #main #searchform div {
+	clear: none;
+}
+.error404 #main #searchform #s,
+.search #main #searchform #s {
+	width: 33%;
+}
+.error404 #main #searchform #searchsubmit,
+.search #main #searchform #searchsubmit {
+	width: auto;
+}
+.error404 #main #searchform label,
+.search #main #searchform label {
+	display: none;
+}
+#main ul#postlist, #main .post ul {
+	overflow: hidden;
+	list-style: none;
+	margin-top: 0px;
+}
+#main ul#postlist ul, #main .post ul {
+	list-style: disc;
+}
+#main ul#postlist ul ul, #main ul#postlist ol ul, #main .post ul ul, #main .post ol ul {
+	margin-top: 0;
+}
+#main ol, #main .post ol {
+	list-style: decimal;
+	margin-left: 18px;
+	margin-top: 16px;
+	padding-left: .75em;
+}
+#main ol ol, #main .post ol ol {
+	margin-top: 0;
+}
+
+#main .selected .actions a:hover, #main .selected .actions a:active {
+	color: #d54e21;
+}
+

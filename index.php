@@ -11,6 +11,7 @@
 		<?php locate_template( array( 'post-form.php' ), true ); ?>
 		<?php endif; ?>
 	<div class="padder">
+	<div id="main">
 		<h2 class="recent-updates">
 			<?php if ( is_home() or is_front_page() ) : ?>
 		
@@ -50,7 +51,7 @@
 					<?php p2_load_entry(); // loads entry.php ?>
 					<?php do_action( 'bp_after_blog_post' ) ?>
 				<?php endwhile; ?>
-				
+		</ul>	
 				<div class="navigation">
 
 					<div class="alignleft"><?php next_posts_link( __( '&larr; Previous Entries', 'buddypress' ) ) ?></div>
@@ -71,7 +72,7 @@
 
 		<?php do_action( 'bp_after_blog_home' ) ?>
 	
-	</ul>
+	</div><!--main-->
 
 		</div><!-- .padder -->
 	

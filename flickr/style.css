@@ -1,0 +1,5 @@
+/*basic style for bp-flickr*/
+/*edit it as you want*/
+.flickr-photo {float:left;padding:5px;width:260px;min-height:240px;height:300px;}
+.flickr-photo  h5{text-align:center;}
+.flickr-photo  img{display:block;margin:0 autho;}

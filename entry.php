@@ -1,4 +1,4 @@
-<div id="prologue-<?php the_ID(); ?>" <?php post_class( get_the_author_meta( 'ID' ) ); ?>>
+<li id="prologue-<?php the_ID(); ?>" <?php post_class( get_the_author_meta( 'ID' ) ); ?>>
 
 						<?php if(has_post_thumbnail()):?>
 							<div class="author-box">
@@ -27,7 +27,7 @@
 										<br class="clear" />
 										<?php do_action( 'p2_action_links' ); ?>
 									</span>
-									<br class="clear" />
+									
 					
 								</div>
 								
@@ -104,4 +104,4 @@
 						<?php endif; ?>
 					<?php endif; ?>
 				
-</div>   <!--post ends here-->
+</li>   <!--post ends here-->
